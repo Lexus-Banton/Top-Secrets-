@@ -17,7 +17,7 @@ describe.only('user routes', () => {
     expect(resp.status).toBe(401);
   });
 
-  it.only('GET /api/v1/secrets should return a list of secrets if user is logged in', async () => {
+  it('GET /api/v1/secrets should return a list of secrets if user is logged in', async () => {
     // use the User Service to create a new user
     const mockUser = {
       email: 'test@example.com',
